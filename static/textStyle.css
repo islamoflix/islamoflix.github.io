@@ -1,0 +1,30 @@
+/* Please use 
+head, headBold, super, superBold and sub id(s) accordingly to syle the texts inside the div#text  */
+
+p#greeting{
+    font-weight: 900;
+}
+.super{
+    margin: 1vh auto 1vh 4vw;
+    font-style: italic;
+}
+.superBold{
+    margin: 2vh auto 1vh 4vw;
+    font-style: italic;
+    font-weight: 900;
+    
+}
+.superBold a{
+    text-decoration: none;
+}
+.head{
+    /* font-style: italic; */
+    margin: 2vh auto 0px ;
+}
+.headBold{
+    margin: 2vh auto 0px ;
+    font-weight: 900;
+}
+.sub{
+    margin: 1vh auto 1vh 10vw;
+}

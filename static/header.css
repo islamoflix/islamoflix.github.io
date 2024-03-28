@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    box-sizing: border-box;
+    min-height: 6vh;
+    background-color: #303030cb;
+    background-image: url(../static/Images/logo.png);
+    background-size:5% 100%;
+    background-repeat: no-repeat;
+    background-position: left 2%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    position: sticky;
+    top: 0px;
+    z-index: 2;
+    border: 1px;
+    border-radius: 15px;
+}
+
+header button{
+    /* position: absolute; */
+    display: none;
+}
+
+/* header link */
+a.header{
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    font-size: 1.5rem;
+}
+
+/* header font */
+li.header{
+    display: inline-block;
+    padding-right: 20vw;
+
+}
+
+li#revert-section{
+     padding-right: 0px;
+}
+
+div#switch-layout{
+    height : 20px;
+    width: 38px;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 100px;
+    position: absolute;
+    right: 5px;
+    background-color: rgb(255, 252, 249);
+    background-image: url(../images/night-mode-8-558092.webp);
+    background-repeat: no-repeat;
+    background-size: 38%;
+    background-position: top 50% right 6%;
+}
+
+div#switch{
+    height: 16px;
+    width: 16px;
+    border: 0px solid black;
+    border-radius: 100%;
+    background-color: rgba(0, 0, 0, 0.514);
+    position: absolute;
+    right: 26px;
+    transition: right 400ms cubic-bezier(0.1, 0.88, 0.04, 1.03) 0s ;
+}
+
+div#activeSwitch{
+    height: 18px;
+    width: 18px;
+    background-color: black;
+    border: 0px solid black;
+    border-radius: 100%;
+    position: absolute;
+    right: 8px;
+    transition: right 400ms cubic-bezier(0.1, 0.88, 0.04, 1.03) 0s ;
+}
+
+footer{
+    background-color: #3030307c;
+    min-height: 6vh;
+    border: 1px;
+    border-radius: 15px;
+}

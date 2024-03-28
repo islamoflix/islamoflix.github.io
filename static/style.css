@@ -1,0 +1,132 @@
+.main-white{
+    background-color: #f3f9ff;
+    border: 1px;
+    border-radius: 15px;
+}
+
+.main-black{
+    background-color: #202020;
+    border: 1px;
+    border-radius: 15px;
+}
+
+main{
+    background-image: url(../static/Images/logo.png);
+    background-repeat: no-repeat;
+    background-size: 5vw 6vh;
+    background-position: right 0px bottom 0px;
+    background-attachment: fixed;
+}
+
+footer div{
+    display: flex;
+    justify-content: center;
+}
+
+/* style on main page(index.html)---------------------------------------------------------------------------------------------------------- */
+
+div.mainIntroduction{
+    padding: 3.35vh 0px;
+    min-height: 40vh;
+    min-width: 30vw;
+    display: flex;
+    flex-flow: row wrap;
+    box-sizing: border-box;
+    list-style-position: outside;
+    list-style-type: none;
+    margin: auto;
+    justify-content: center;
+}
+
+div.mainIntroduction li a{
+    display: flex;
+    /* margin: 4px auto; */
+    text-decoration: none;
+    border: 1px solid rgba(0, 0, 0, 0);
+    min-height: 40vh;
+    min-width: 32vw;
+    border-radius: 25px;
+    align-items:center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-family: 'Cedarville Cursive';
+    color: white;
+    text-shadow:none;
+    transition: text-shadow 400ms ease-out 0s;
+    /* transition: border-radius 400ms ease-out 0s; */
+}
+div.mainIntroduction li p{
+    display: flex;
+    justify-content: center;
+    font-style: italic;
+    /* text-shadow: 2px 2px white; */
+    color: black;
+    font-size: 1.5rem;
+}
+/* This is for the decorated section in the home page. */
+a#a{
+    background-image: url(../images/pillars.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+a#b{
+    background-image: url(../images/faith.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+a#c{
+    background-image: url(../images/sharia.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+a#d{
+    background-image: url(../images/maulid-7735503_1280.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+a#e{
+    background-image: url(../images/allah-7693277_1920.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+a#f{
+    background-image: url(../images/agenda.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+div.mainIntroduction li {
+    margin: 0.33vh 0.5vh;
+    min-width: 15em;
+}
+
+/* style on mainIntroduction pages------------------------------------------------------------------------------------------------------------ */
+
+div.main{
+    border : 2px solid black;
+    border-radius: 15px;
+    min-height: calc(92.7vh);
+    z-index: 3;
+    padding: 2px;
+    background-color: white;
+}
+
+div.heading{
+    display: flex;
+    justify-content: center;
+    font-size: 1.3em;
+    padding-top: 1vw;
+    font-weight: 1000;
+}
+
+div.text{
+    font-size: 1rem;
+    padding: 4vh 4vw;
+
+}
+
+div.text ul, div.text ol{
+    list-style-position: inside;
+}

@@ -1,0 +1,69 @@
+/* media query for main options */
+@media screen and (min-width: 1366px) and (min-height: 720px){
+    div.main{
+        margin: 0px 34vh;
+    }
+}
+/* Media query on header */
+
+@media screen and (max-width: 720px) {
+    header{
+        display: flex;
+        justify-content: end;
+        align-items: center;
+    }
+    header div#menu{
+        display: block;
+        margin-right: 50px;
+    }
+    header button{
+        display: block;
+        width: 30px;
+        height: 25px;
+        background-image: url(../static/Images/hamburger-menu-icon-png-white-8.jpg);
+        background-repeat: no-repeat;
+        background-size: 120%;
+        background-position: center;
+    }
+
+    button img{
+        display: none;
+    }
+    li.header{
+        display: block;
+        padding: 0px;
+        min-width: 14em;
+        min-height: 2.5em;
+    }
+
+    a.header{
+        display:flex;
+        justify-content:center;
+        align-items: center;
+        min-height: 2.5em;
+    }
+
+    header ul{
+        position: absolute;
+        top: 4vh;
+        right: 4vw;
+        border: 1px;
+        border-radius: 15px;
+        display: none;
+        background-color: #303030cb;
+        transition: display 1s ease-out 0s;
+
+    }
+
+    li.header:hover{
+        border: 1px;
+        border-radius: 15px;
+        background-color: #303030a9;
+    }
+
+    header button:focus + ul, header ul:active{
+        display:block;
+    }
+
+    
+} 

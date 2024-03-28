@@ -1,0 +1,22 @@
+a.header:hover{
+    box-sizing: border-box;
+    text-decoration: none;
+    font-weight: bolder;
+    color: rgba(255, 255, 255, 0.753);
+    font-size: 1.5rem;
+}
+
+div.mainIntroduction a:hover{
+
+    border: 1px solid rgb(0, 0, 0);
+    text-shadow:2px 4px black;
+    font-weight: 900;
+}
+
+div.mainIntroduction a:active{
+
+    border: 1px solid rgb(0, 0, 0);
+    text-shadow:2px 4px black;
+    font-weight: 100;
+}
+
