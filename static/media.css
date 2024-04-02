@@ -1,8 +1,10 @@
 /* media query for main options */
 @media screen and (min-width: 1366px) and (min-height: 720px){
     div.main{
-        margin: 0px 34vh;
+        margin: 0px 34vh; /*this is outline of covered topic of main page*/
     }
+
+    
 }
 /* Media query on header */
 
@@ -64,6 +66,24 @@
     header button:focus + ul, header ul:active{
         display:block;
     }
-
-    
 } 
+
+/* media query on main elements of main page */
+
+@media screen and (max-width: 1366px) {
+    div.mainIntroduction li a{
+        min-height: 290px;
+        min-width: 240px;
+    }
+
+    div.mainIntroduction li{
+        width: 240px;
+        min-height: 219px;
+    }
+}
+
+@media screen and (min-width: 990px) and (max-width: 1366px){
+    div.mainIntroduction li{
+        margin: auto 4vw;
+    }
+}

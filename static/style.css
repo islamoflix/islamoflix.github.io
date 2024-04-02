@@ -26,7 +26,7 @@ footer div{
 /* style on main page(index.html)---------------------------------------------------------------------------------------------------------- */
 
 div.mainIntroduction{
-    padding: 3.35vh 0px;
+    padding: 2vh 0px;
     min-height: 40vh;
     min-width: 30vw;
     display: flex;
@@ -98,7 +98,7 @@ a#f{
 
 
 div.mainIntroduction li {
-    margin: 0.33vh 0.5vh;
+    margin: 0px 0.5vh;
     min-width: 15em;
 }
 
