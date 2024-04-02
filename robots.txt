@@ -1,0 +1,8 @@
+User-agent: *
+Disallow: /static/
+Disallow: /images/
+Disallow: /README.md
+Disallow: /static/Images/
+Allow: /template/
+Sitemap: https://islamoflix.github.io/sitemap.xml
+Sitemap: https://islamoflix.github.io/template/site%20map.xml
