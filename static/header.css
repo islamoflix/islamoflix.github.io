@@ -85,7 +85,7 @@ div#activeSwitch{
 
 footer{
     background-color: #3030307c;
-    min-height: 6vh;
     border: 1px;
     border-radius: 15px;
+    font-size: small;
 }

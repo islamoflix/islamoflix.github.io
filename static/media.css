@@ -7,12 +7,14 @@
     
 }
 /* Media query on header */
-
+/* The dropdown option for mobiles */
 @media screen and (max-width: 720px) {
+    /* burgur option in header for mobile devices as well as logo */
     header{
         display: flex;
         justify-content: end;
         align-items: center;
+        background-size: 9% 100%;
     }
     header div#menu{
         display: block;
@@ -26,6 +28,9 @@
         background-repeat: no-repeat;
         background-size: 120%;
         background-position: center;
+        background-color: #00000000;
+        border: none;
+        /* opacity: 50%; */
     }
 
     button img{
@@ -66,23 +71,24 @@
     header button:focus + ul, header ul:active{
         display:block;
     }
+
 } 
 
 /* media query on main elements of main page */
 
 @media screen and (max-width: 1366px) {
     div.mainIntroduction li a{
-        min-height: 290px;
-        min-width: 240px;
+        min-height: 40vh;
+        min-width: 30vw;
     }
 
     div.mainIntroduction li{
-        width: 240px;
-        min-height: 219px;
+        width: 50vh;
+        min-height: 50vh;
     }
 }
 
-@media screen and (min-width: 990px) and (max-width: 1366px){
+@media screen and (min-width: 980px) and (max-width: 1366px){
     div.mainIntroduction li{
         margin: auto 4vw;
     }
