@@ -6,8 +6,7 @@ const mainDiv = document.querySelector('div.main');
 // let theme = "light";
 
 function darkMode(){
-    main.style.backgroundColor = 'black';
-    
+    main.style.backgroundColor = '#262626';
     _switch.setAttribute('class', 'activeSwitch');
     p.forEach((val) => {
         val.style.color = "white";
@@ -22,7 +21,6 @@ function darkMode(){
 
 function lightMode(){
     main.style.backgroundColor = '#CCC1BE';
-    
     _switch.setAttribute('class', 'switch');
     p.forEach((val) => {
         val.style.color = "black";
