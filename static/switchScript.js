@@ -6,7 +6,7 @@ const mainDiv = document.querySelector('div.main');
 // let theme = "light";
 
 function darkMode(){
-    main.setAttribute('class', 'main-black');
+    main.style.backgroundColor = 'black';
     
     _switch.setAttribute('class', 'activeSwitch');
     p.forEach((val) => {
@@ -21,7 +21,7 @@ function darkMode(){
 }
 
 function lightMode(){
-    main.setAttribute('class', 'main-white');
+    main.style.backgroundColor = '#CCC1BE';
     
     _switch.setAttribute('class', 'switch');
     p.forEach((val) => {
@@ -53,8 +53,8 @@ switchLayout.addEventListener('click', () => {
 })
 
 
-document.querySelector('body').onload = () => {
+document.querySelector('body').onload = (async () => {
     theme = JSON.parse(localStorage.getItem('theme'));
-    theme == 'light'?lightMode(): darkMode();
-}
+    await theme == 'light'?lightMode(): darkMode();
+})();
 

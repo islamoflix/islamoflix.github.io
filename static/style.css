@@ -1,11 +1,5 @@
-.main-white{
-    background-color: #f3f9ff;
-    border: 1px;
-    border-radius: 15px;
-}
-
-.main-black{
-    background-color: #202020;
+main{
+    /* background-color: #CCC1BE; */
     border: 1px;
     border-radius: 15px;
 }
