@@ -3,49 +3,58 @@ const switchLayout = document.querySelector('#switch-layout');
 const main = document.querySelector('main');
 const p = document.querySelectorAll('p');
 const mainDiv = document.querySelector('div.main');
+// let theme = "light";
 
-function pBlack(val){
-    element = val.style;
-    element.color = 'black';
-    // element.textShadow = '2px 2px white';    
+function darkMode(){
+    main.setAttribute('class', 'main-black');
+    
+    _switch.setAttribute('class', 'activeSwitch');
+    p.forEach((val) => {
+        val.style.color = "white";
+    } )
+    localStorage.setItem('theme', JSON.stringify('dark'));
+    try{
+        mainDiv.style.backgroundColor = "#525252";}
+    catch{
+
+    }
 }
 
-function pWhite(val){
-    element = val.style;
-    element.color = 'white';
-    // element.textShadow = '2px 2px black';
+function lightMode(){
+    main.setAttribute('class', 'main-white');
+    
+    _switch.setAttribute('class', 'switch');
+    p.forEach((val) => {
+        val.style.color = "black";
+    } )
+    localStorage.setItem('theme', JSON.stringify('light'));
+    try{
+        mainDiv.style.backgroundColor = "white";}
+    catch{}
 }
 
-// content windows color changes
-function windowBlack(){
-    mainDiv.style.backgroundColor = '#525252';
-} 
-
-function windowWhite(){
-    mainDiv.style.backgroundColor = 'white';
-}
-
-_switch.addEventListener('click', ()=>{ 
-    _switch.getAttribute('id')=='switch'? _switch.setAttribute('id', 'activeSwitch'): _switch.setAttribute('id', 'switch');
-    _switch.getAttribute('id')=='switch'? main.setAttribute('class', 'main-white'): main.setAttribute('class', 'main-black'); //changing color of main window
-    if (_switch.getAttribute('id')=='switch'){
-        p.forEach(pBlack);
-        windowWhite();
-    } else if (_switch.getAttribute('id')=='activeSwitch'){
-        p.forEach(pWhite);
-        windowBlack();
+_switch.addEventListener('click', () => {
+    theme = JSON.parse(localStorage.getItem('theme'));
+    if(theme == 'light'){
+        darkMode()
+    }else{
+        lightMode()
     }
 })
 
-switchLayout.addEventListener('click', ()=>{ 
-    _switch.getAttribute('id')=='switch'? _switch.setAttribute('id', 'activeSwitch'): _switch.setAttribute('id', 'switch');
-    _switch.getAttribute('id')=='switch'? main.setAttribute('class', 'main-white'): main.setAttribute('class', 'main-black'); //changing color of main window
-    if (_switch.getAttribute('id')=='switch'){
-        p.forEach(pBlack);
-        windowWhite();
-    } else if (_switch.getAttribute('id')=='activeSwitch'){
-        p.forEach(pWhite);
-        windowBlack();
+
+switchLayout.addEventListener('click', () => {
+    theme = JSON.parse(localStorage.getItem('theme'));
+    if(theme == 'light'){
+        darkMode()
+    }else{
+        lightMode()
     }
 })
+
+
+document.querySelector('body').onload = () => {
+    theme = JSON.parse(localStorage.getItem('theme'));
+    theme == 'light'?lightMode(): darkMode();
+}
 

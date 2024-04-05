@@ -61,7 +61,7 @@ div#switch-layout{
     background-position: top 50% right 6%;
 }
 
-div#switch{
+.switch{
     height: 16px;
     width: 16px;
     border: 0px solid black;
@@ -72,7 +72,7 @@ div#switch{
     transition: right 400ms cubic-bezier(0.1, 0.88, 0.04, 1.03) 0s ;
 }
 
-div#activeSwitch{
+.activeSwitch{
     height: 18px;
     width: 18px;
     background-color: black;
