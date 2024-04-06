@@ -15,6 +15,7 @@
         justify-content: end;
         align-items: center;
         background-size: 20% 100%;
+        background-color: rgba(255, 255, 255, 0);
     }
     header div#menu{
         display: block;
