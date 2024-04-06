@@ -8,9 +8,9 @@ header{
     min-height: 6vh;
     background-color: #303030cb;
     background-image: url(../static/Images/logo.png);
-    background-size:5% 100%;
+    background-size:7% 152%;
     background-repeat: no-repeat;
-    background-position: left 2%;
+    background-position: 0% 37%;
     color: white;
     display: flex;
     justify-content: center;
