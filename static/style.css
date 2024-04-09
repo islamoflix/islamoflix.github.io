@@ -110,7 +110,6 @@ div.main{
 div.heading{
     display: flex;
     justify-content: center;
-    font-size: 1.3em;
     padding-top: 1vw;
     font-weight: 1000;
 }
