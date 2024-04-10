@@ -73,24 +73,26 @@
         display:block;
     }
 
-    div#logo{
-        height: 7vh;
-        width: 8vh;
-    }
+
 
 } 
 
 /* media query on main elements of main page */
 
 @media screen and (max-width: 1366px) {
-    div.mainIntroduction li a{
+    div.mainIntroduction li a {
         min-height: 40vh;
         min-width: 30vw;
     }
 
-    div.mainIntroduction li{
+    div.mainIntroduction li {
         width: 50vh;
         min-height: 50vh;
+    }
+
+    div#logo {
+        height: 7vh;
+        width: 8vh;
     }
 }
 
