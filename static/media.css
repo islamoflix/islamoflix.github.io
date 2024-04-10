@@ -73,8 +73,10 @@
         display:block;
     }
 
-
-
+    div.main {
+        position: relative;
+        z-index: 2;
+    }
 } 
 
 /* media query on main elements of main page */

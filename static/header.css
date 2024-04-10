@@ -13,7 +13,6 @@ header{
     box-sizing: border-box;
     position: sticky;
     top: 0px;
-    z-index: 2;
 }
 
 div#logo{
@@ -26,7 +25,7 @@ div#logo{
     background-image: url(../static/Images/logo-light.png);
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    z-index: 0;
+    z-index: 1;
 }
 header button{
     /* position: absolute; */

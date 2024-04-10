@@ -96,9 +96,9 @@ div.main{
     border : 2px solid black;
     border-radius: 15px;
     min-height: calc(92.7vh);
-    z-index: 3;
     padding: 2px;
     background-color: white;
+
 }
 
 div.heading{
