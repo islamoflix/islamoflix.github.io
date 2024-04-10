@@ -43,6 +43,7 @@ a.header{
 header ul{
     display: flex;
     gap: 5vw;
+    margin-right: 6vw;
 }
 
 li.header{
