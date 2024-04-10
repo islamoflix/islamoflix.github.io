@@ -15,10 +15,9 @@
         justify-content: end;
         align-items: center;
         background-size: 25% 152%;
-        background-color: rgba(255, 255, 255, 0);
     }
     header div#menu{
-        display: block;
+        display: flex;
         margin-right: 50px;
     }
     header button{
@@ -58,7 +57,7 @@
         border: 1px;
         border-radius: 15px;
         display: none;
-        background-color: #303030cb;
+        background-color: #303030;
         transition: display 1s ease-out 0s;
 
     }
@@ -66,16 +65,11 @@
     li.header:hover{
         border: 1px;
         border-radius: 15px;
-        background-color: #303030a9;
+        background-color: #303030;
     }
 
     header button:focus + ul, header ul:active{
         display:block;
-    }
-
-    div.main {
-        position: relative;
-        z-index: 2;
     }
 } 
 
@@ -93,8 +87,8 @@
     }
 
     div#logo {
-        height: 7vh;
-        width: 8vh;
+        height: 6vh;
+        width: 7vh;
     }
 }
 
