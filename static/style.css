@@ -4,12 +4,6 @@ main{
     background-size: 5vw 6vh;
     background-position: right 0px bottom 0px;
     background-attachment: fixed;
-    border: 1px;
-    border-radius: 15px;
-}
-
-body{
-    background-color: rgb(141, 141, 141);
 }
 
 footer div{

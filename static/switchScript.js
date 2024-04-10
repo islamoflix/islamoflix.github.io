@@ -3,14 +3,21 @@ const switchLayout = document.querySelector('#switch-layout');
 const main = document.querySelector('main');
 const p = document.querySelectorAll('p');
 const mainDiv = document.querySelector('div.main');
+const body = document.querySelector('body');
+const nav = document.querySelectorAll('a.header')
+const logo = document.querySelector('div#logo');
 // let theme = "light";
 
 function darkMode(){
-    main.style.backgroundColor = '#262626';
     _switch.setAttribute('class', 'activeSwitch');
+    logo.style.backgroundImage = 'url(../static/Images/logo-dark.png)';
     p.forEach((val) => {
         val.style.color = "white";
     } )
+    nav.forEach((val) => {
+        val.style.color = 'white';
+    })
+    body.style.backgroundColor = '#262626';
     localStorage.setItem('theme', JSON.stringify('dark'));
     try{
         mainDiv.style.backgroundColor = "#525252";}
@@ -20,14 +27,18 @@ function darkMode(){
 }
 
 function lightMode(){
-    main.style.backgroundColor = '#CCC1BE';
     _switch.setAttribute('class', 'switch');
+    body.style.backgroundColor = 'white';
+    logo.style.backgroundImage = 'url(../static/Images/logo-light.png)';
     p.forEach((val) => {
         val.style.color = "black";
     } )
+    nav.forEach((val) => {
+        val.style.color = 'black';
+    })
     localStorage.setItem('theme', JSON.stringify('light'));
     try{
-        mainDiv.style.backgroundColor = "white";}
+        mainDiv.style.backgroundColor = "rgb(204, 193, 190)";}
     catch{}
 }
 

@@ -53,8 +53,8 @@
 
     header ul{
         position: absolute;
-        top: 4vh;
-        right: 4vw;
+        top: 5vh;
+        right: 0px;
         border: 1px;
         border-radius: 15px;
         display: none;
@@ -71,6 +71,11 @@
 
     header button:focus + ul, header ul:active{
         display:block;
+    }
+
+    div#logo{
+        height: 7vh;
+        width: 8vh;
     }
 
 } 

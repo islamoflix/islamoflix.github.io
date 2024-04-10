@@ -6,11 +6,6 @@
 header{
     box-sizing: border-box;
     min-height: 6vh;
-    background-color: #303030cb;
-    background-image: url(../static/Images/logo.png);
-    background-size:7% 152%;
-    background-repeat: no-repeat;
-    background-position: 0% 37%;
     color: white;
     display: flex;
     justify-content: right;
@@ -19,10 +14,19 @@ header{
     position: sticky;
     top: 0px;
     z-index: 2;
-    border: 1px;
-    border-radius: 15px;
 }
 
+div#logo{
+    width: 6vw;
+    height: 4.5vw;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    background-color: black;
+    background-image: url(../static/Images/logo-light.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
 header button{
     /* position: absolute; */
     display: none;
@@ -39,7 +43,6 @@ a.header{
 header ul{
     display: flex;
     gap: 5vw;
-    margin-right: 5em;
 }
 
 li.header{
