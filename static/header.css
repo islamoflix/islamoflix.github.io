@@ -26,6 +26,7 @@ div#logo{
     background-image: url(../static/Images/logo-light.png);
     background-size: 100% 100%;
     background-repeat: no-repeat;
+    z-index: 0;
 }
 header button{
     /* position: absolute; */
