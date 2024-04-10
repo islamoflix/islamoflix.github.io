@@ -3,7 +3,6 @@ a.header:hover{
     text-decoration: none;
     font-weight: bolder;
     color: rgba(255, 255, 255, 0.753);
-    font-size: 1.5rem;
 }
 
 div.mainIntroduction a:hover{
