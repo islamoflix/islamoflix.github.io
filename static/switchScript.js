@@ -5,12 +5,14 @@ const p = document.querySelectorAll('p');
 const mainDiv = document.querySelector('div.main');
 const body = document.querySelector('body');
 const nav = document.querySelectorAll('a.header')
-const logo = document.querySelector('div#logo');
+const logo = document.querySelector('#logo');
+const options= document.querySelector('ul#options')
 // let theme = "light";
 
 function darkMode(){
     _switch.setAttribute('class', 'activeSwitch');
-    logo.style.backgroundImage = 'url(../static/Images/logo-dark.png)';
+    logo.setAttribute('class', 'logo-dark');
+    options.style.backgroundColor = '#262626';
     p.forEach((val) => {
         val.style.color = "white";
     } )
@@ -29,7 +31,8 @@ function darkMode(){
 function lightMode(){
     _switch.setAttribute('class', 'switch');
     body.style.backgroundColor = 'white';
-    logo.style.backgroundImage = 'url(../static/Images/logo-light.png)';
+    logo.setAttribute('class', 'logo-light');
+    options.style.backgroundColor = 'white';
     p.forEach((val) => {
         val.style.color = "black";
     } )
