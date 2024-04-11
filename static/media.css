@@ -56,8 +56,8 @@
         border: 1px;
         border-radius: 15px;
         display: none;
+        border: 2px solid black;
         transition: display 1s ease-out 0s;
-
     }
 
     li.header:hover{
