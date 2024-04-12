@@ -76,13 +76,12 @@
         visibility: hidden;
     }
 
-    header{
-        background-color: rgb(38, 38, 38);
-    }
+    
 
     #logo{
         position: fixed;
     }
+
 }
 
 /* media query on main elements of main page */

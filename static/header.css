@@ -20,7 +20,7 @@ header{
     display: inline-block;
     min-width: 6vw;
     min-height: 4.5vw;
-    position: absolute;
+    position: fixed;
     left: 0px;
     top: -7px;
     background-size: 100% 100%;
