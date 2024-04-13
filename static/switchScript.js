@@ -8,11 +8,13 @@ const nav = document.querySelectorAll('a.header')
 const logo = document.querySelector('#logo');
 const options= document.querySelector('ul#options')
 const header = document.querySelector('header');
+const bar = document.querySelector('#search-bar');
 // let theme = "light";
 
 function darkMode(){
     _switch.setAttribute('class', 'activeSwitch');
     logo.setAttribute('class', 'logo-dark');
+    bar.style.border = '2px solid white';
     options.style.backgroundColor = '#262626';
     header.style.backgroundColor = '#262626'
     p.forEach((val) => {
@@ -34,6 +36,7 @@ function lightMode(){
     _switch.setAttribute('class', 'switch');
     body.style.backgroundColor = 'white';
     logo.setAttribute('class', 'logo-light');
+    bar.style.border = '2px solid rgba(0, 0, 0, 0.493)';
     options.style.backgroundColor = 'white';
     header.style.backgroundColor = 'white';
     p.forEach((val) => {

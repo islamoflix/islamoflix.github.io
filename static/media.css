@@ -69,7 +69,30 @@
     header button:focus + ul, header ul:active{
         display:block;
     }
+
+    .search-area{
+        display: flex;
+    }
+
+    #search-bar{
+        max-width: 20vw;
+        font-size: small;
+        padding: 0px 13vw 0px 5vw;
+    }
+
+    #search-bar:focus{
+        max-width: 33vw;
+        margin: 2px;
+    }
 } 
+
+
+
+
+
+
+
+
 
 @media screen and (min-width: 720px){
     li#Home{

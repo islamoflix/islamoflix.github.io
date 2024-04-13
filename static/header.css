@@ -37,6 +37,22 @@ header{
 
 }
 
+/* search-area and bar */
+#search-bar{
+    border-radius: 100px;
+    min-width: 20vw;
+    min-height: 4vh;
+    padding: 0px 3vw 0px 1vw;
+    margin: 0px 10px ;
+    font-size: 1.2em;
+    border: 2px solid rgba(0, 0, 0, 0.493);
+    background-image: url(../images/icons8-search-50.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right 6px top 0px;
+}
+
+
 header button{
     /* position: absolute; */
     display: none;
