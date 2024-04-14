@@ -22,7 +22,7 @@ header{
     min-height: 4.5vw;
     position: fixed;
     left: 0px;
-    top: -7px;
+    top: 0px;
     background-size: 100% 100%;
     background-repeat: no-repeat;
     z-index: 100;
