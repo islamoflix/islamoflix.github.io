@@ -71,19 +71,28 @@
     }
 
     .search-area{
-        display: flex;
+        top: 3px;
+        margin: 0px 0rem 0px 6rem;
     }
-
     #search-bar{
-        max-width: 20vw;
+        max-width: 10vw;
         font-size: small;
         padding: 0px 13vw 0px 5vw;
-    }
-
-    #search-bar:focus{
-        max-width: 33vw;
         margin: 2px;
     }
+
+    #suggestions{
+        font-size: small;
+        background-color: white;
+        border: 2px solid black;
+        border-radius: 15px;
+    }
+
+    div.search-area #search-bar:focus{
+        max-width: 30vw;
+    }
+
+    
 } 
 
 

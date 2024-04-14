@@ -29,7 +29,7 @@
           "@type": "Website",
           "name": "Islamoflix",
           "alternateName": "islamoflix.io",
-          "logo": "https://islamoflix.github.io/static/Images/logo.jpg",  
+          "logo": "https://islamoflix.github.io/static/Images/logo-light.png",  
           "url": "https://islamoflix.github.io"
         }
       </script>
@@ -41,7 +41,11 @@
     </a>
     <header>
         <div class="search-area">
-            <input type="text" id = 'search-bar' name = 'search-bar'>
+            <input type="text" id = 'search-bar' name = 'search-bar' placeholder="search any page or covered topic">
+
+            <div id="suggestions">
+                <P id="example" class = suggestions style = "align-items: center;">Results</P>
+            </div>
         </div>
         <div id = 'menu'><button><img src="../static/Images/hamburger-menu-icon-png-white-8.jpg"
                     alt="icon" width="30px"></button>
@@ -78,6 +82,6 @@
 
     <script src="../static/switchScript.js"></script>
 
-    
+    <script src="../static/query.js"></script>
 </body>
 </html>

@@ -1,7 +1,7 @@
 const _switch = document.querySelector('#switch');
 const switchLayout = document.querySelector('#switch-layout');
 const main = document.querySelector('main');
-const p = document.querySelectorAll('p');
+const p = document.querySelectorAll('div.text p');
 const mainDiv = document.querySelector('div.main');
 const body = document.querySelector('body');
 const nav = document.querySelectorAll('a.header')

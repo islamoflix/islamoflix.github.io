@@ -38,13 +38,19 @@ header{
 }
 
 /* search-area and bar */
+.search-area{
+    display: block;
+    position: fixed;
+    top: 8px;
+    right: 32vw;
+}
+
 #search-bar{
     border-radius: 100px;
     min-width: 20vw;
     min-height: 4vh;
     padding: 0px 3vw 0px 1vw;
-    margin: 0px 10px ;
-    font-size: 1.2em;
+    font-size: large;
     border: 2px solid rgba(0, 0, 0, 0.493);
     background-image: url(../images/icons8-search-50.png);
     background-repeat: no-repeat;
@@ -52,6 +58,41 @@ header{
     background-position: right 6px top 0px;
 }
 
+div.search-area:focus #suggestions, #search-bar:focus~#suggestions, #suggestions:active, .suggestions:active{
+    display: block;
+} 
+
+#suggestions{
+    display: none;
+    min-height: 3rem;
+    position: relative;
+    top: 5px;
+    color: black;
+    font-size:large;
+    text-wrap:nowrap;
+    overflow: hidden;
+    line-height: 25px;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 15px;
+}
+
+.suggestions, #suggestions p{
+    margin: 2px 0px;
+    padding: 15px 0px;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    color: black;
+    text-decoration: none;
+    width: auto;
+    
+    height: auto;
+}
+
+.suggestions:hover{
+    background-color: rgba(68, 68, 68, 0.534);
+}
 
 header button{
     /* position: absolute; */

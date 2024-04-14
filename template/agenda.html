@@ -29,8 +29,14 @@
     </a>
     <header>
         <div class="search-area">
-            <input type="text" id = 'search-bar' name = 'search-bar'>
+            <input type="text" id = 'search-bar' name = 'search-bar' placeholder="search any page or covered topic">
+
+            <div id="suggestions">
+                <P id="example" class = suggestions>Results</P>
+            </div>
         </div>
+
+
         <div id='menu'><button></button>
             <ul id='options'>
                 <li id=Home class=header><a class=header href="index.html"
@@ -105,6 +111,8 @@
     </main>
 
     <script src="../static/switchScript.js"></script>
+
+    <script src="../static/query.js"></script>
 </body>
 
 </html>

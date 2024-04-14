@@ -16,8 +16,14 @@
     </a>
     <header>
         <div class="search-area">
-            <input type="text" id = 'search-bar' name = 'search-bar'>
+            <input type="text" id = 'search-bar' name = 'search-bar' placeholder="search any page or covered topic">
+
+            <div id="suggestions">
+                <P id="example" class = suggestions>Results</P>
+            </div>
         </div>
+
+
         <div id = 'menu'><button><img src="../static/Images/hamburger-menu-icon-png-white-8.jpg"
                     alt="icon" width="30px"></button>
             <ul id='options'>
@@ -42,5 +48,6 @@
     </main>
 
     <script src="../../static/switchScript.js"></script>
+    <script src="../../static/query.js"></script>
 </body>
 </html>
