@@ -37,12 +37,12 @@ header{
 
 }
 
-/* search-area and bar */
+/* search-area and bar ***************************************************/
 .search-area{
     display: block;
     position: fixed;
     top: 8px;
-    right: 32vw;
+    left: 38vw;
 }
 
 #search-bar{
@@ -94,22 +94,24 @@ div.search-area:focus #suggestions, #search-bar:focus~#suggestions, #suggestions
     background-color: rgba(68, 68, 68, 0.534);
 }
 
+/* **************************************************************** */
 header button{
     /* position: absolute; */
     display: none;
 }
 
 /* header link */
-a.header{
+.header{
     text-decoration: none;
     font-weight: bold;
     color: white;
     font-size: 1.3rem;
+    cursor: pointer;
 }
 
 header ul{
     display: flex;
-    gap: 5vw;
+    gap: 2vw;
     margin-right: 6vw;
 }
 
@@ -117,10 +119,24 @@ li.header{
     list-style: none;
 }
 
-li#revert-section{
-     padding-right: 0px;
+#mail{
+    position: fixed;
+    right: 1vw;
+    padding: 2vh;
+}
+.mail-visible{
+    display: block;
 }
 
+.mail-hidden{
+    display: none;
+}
+
+/* li.header:hover div#mail{
+    display: block;
+} */
+
+/* ************************************************************** */
 div#switch-layout{
     height : 20px;
     width: 38px;

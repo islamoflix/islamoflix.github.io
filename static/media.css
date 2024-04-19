@@ -7,7 +7,7 @@
 }
 /* Media query on header */
 /* The dropdown option for mobiles */
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 1163px) {
     /* burgur option in header for mobile devices as well as logo */
     header{
         display: flex;
@@ -42,7 +42,7 @@
         min-height: 2.5em;
     }
 
-    a.header{
+    .header{
         display:flex;
         justify-content:center;
         align-items: center;
@@ -66,11 +66,16 @@
         background-color: #303030;
     }
 
+    li#email{
+        display: none;
+    }
+
     header button:focus + ul, header ul:active{
         display:block;
     }
 
     .search-area{
+        left: -27px;
         top: 3px;
         margin: 0px 0rem 0px 6rem;
     }

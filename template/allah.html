@@ -47,6 +47,19 @@
                 </li>
                 <li id=refutations class=header><a class=header href="./refutations/refutations.html">Refutations</a></li>
                 <li id=revert-section class=header><a class=header href="./revert-section/revert-section.html">Revert Section</a></li>
+                <li id ="email" class = header>
+                    <p class = header id = contact href = "#">Email &darr;</a>
+                        <div id=mail class = 'mail-hidden'>
+                            <p class=header style="font-size: medium;">islamoflix@gmail.com</a>
+                        </div>
+                    
+                </li>
+                <script>
+                    document.querySelector('p#contact').addEventListener('click', () =>{
+                        console.log('triggered');
+                        document.querySelector('#mail').getAttribute('class') == 'mail-hidden'? document.querySelector('#mail').setAttribute('class', 'mail-visible'):
+                        document.querySelector('#mail').setAttribute('class', 'mail-hidden');})
+                </script>
             </ul>
 
         </div>
