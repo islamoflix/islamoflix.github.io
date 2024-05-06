@@ -71,7 +71,9 @@ switchLayout.addEventListener('click', () => {
     }
 })
 
-email.onclick = () => {alert('EMAIL: islamoflix@gmail.com');}
+email.onclick = () => {
+    alert('EMAIL: islamoflix@gmail.com');
+}
 
 document.querySelector('body').onload = (async () => {
     theme = JSON.parse(localStorage.getItem('theme'));
