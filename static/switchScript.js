@@ -9,6 +9,7 @@ const logo = document.querySelector('#logo');
 const options= document.querySelector('ul#options')
 const header = document.querySelector('header');
 const bar = document.querySelector('#search-bar');
+const email = document.querySelector('li#email');
 // let theme = "light";
 
 function darkMode(){
@@ -70,6 +71,7 @@ switchLayout.addEventListener('click', () => {
     }
 })
 
+email.onclick = () => {alert('EMAIL: islamoflix@gmail.com');}
 
 document.querySelector('body').onload = (async () => {
     theme = JSON.parse(localStorage.getItem('theme'));

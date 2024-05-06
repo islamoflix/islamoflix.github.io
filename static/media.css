@@ -66,10 +66,6 @@
         background-color: #303030;
     }
 
-    li#email{
-        display: none;
-    }
-
     header button:focus + ul, header ul:active{
         display:block;
     }
