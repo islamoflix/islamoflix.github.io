@@ -147,6 +147,6 @@ div#topic{
     border-radius: 15px;
 }
 
-div#topic p{
+div#topic a{
     text-decoration: none;
 }
