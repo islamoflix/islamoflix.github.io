@@ -14,6 +14,7 @@ const index = {
     "Agenda of Islam": "https://islamoflix.github.io/template/agenda.html",
     "Refutations": "https://islamoflix.github.io/template/refutations/refutations.html",
     "Revert Section": "https://islamoflix.github.io/template/revert-section/revert-section.html",
+    "Did Allah prayed to or for prophet": "https://islamoflix.github.io/template/refutations/refutation5-31-24.html"
 }
 
 let key = Object.keys(index); //stores keys of index obj as an array for ease to access keys by indexing
@@ -26,7 +27,8 @@ const keywords = {
     "god, Allah, concept of god, concept of allah, Concept of god, Concept of allah, Concept of Allah": key[5],
     "agenda of islam, Agenda of islam, what is islam, why islam, Islam": key[6],
     "Refutations, refutations, answers, solutions, Solutions, Why?, why?": key[7],
-    "revert section, Revert section, Revert Sections, reverts, Reverts, materials, Materials": key[8]
+    "revert section, Revert section, Revert Sections, reverts, Reverts, materials, Materials": key[8],
+    "Did Allah prayed to or for prophet": key[9]
 }
 
 let query = "";
@@ -36,7 +38,7 @@ function linearSearch(query){
     for(let i in keywords){
         if(query == ''){
             searchResults.splice(0);    //is there is no query or the query got cleared, the prev results deletes
-        }else if(i.includes(query)){
+        }else if(i.toLowerCase().includes(query.toLowerCase())){
             searchResults.push(keywords[i]);
         }
     }

@@ -117,3 +117,36 @@ div.text{
 div.text ul, div.text ol{
     list-style-position: inside;
 }
+
+
+/* style on refutation main page********************************* */
+
+ul#refutations-list{
+    list-style: none;
+}
+
+div#refutation-main{
+    margin: 4rem;
+    display: flex;
+    justify-content: center;
+
+}
+
+div#topic{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px double white;
+    min-width: 15rem;
+    min-height: 14rem;
+    gap: 4rem;
+    text-decoration: none;
+    background-color: rgb(48, 48, 48);
+    color: white;
+    font-weight: 1000;
+    border-radius: 15px;
+}
+
+div#topic p{
+    text-decoration: none;
+}
